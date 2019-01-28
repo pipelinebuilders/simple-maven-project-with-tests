@@ -30,6 +30,7 @@ import org.junit.internal.AssumptionViolatedException;
 class Base {
 
     protected void run() {
+	    //comment
         double r = Math.random();
         if (r < 0.1) {
             fail("oops");
