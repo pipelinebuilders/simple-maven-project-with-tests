@@ -1,7 +1,7 @@
 #!groovy
 
 def handleCheckout = {
-    "sh "echo 'Checkingout branch...'"
+    sh "echo 'Checkingout branch...'"
     checkout scm
 }
 
