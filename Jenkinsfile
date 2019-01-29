@@ -14,6 +14,7 @@ node() {
 }
    stage('Build') {
       // Run the maven build
+      def mvnHome = tool 'M3'
       if (isUnix()) {
          sh "'${mvnHome}/bin/mvn' -Dmaven.test.failure.ignore clean package"
       } else {
